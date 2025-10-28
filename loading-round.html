@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading</title>
+
+    <style>
+      .loading {
+        width: 80px;
+        height: 80px;
+        margin: 250px auto;
+        border-top: 10px solid #0062ff !important;
+        border: 10px solid #e4e4e4;
+        background-color: white;
+        border-radius: 200rem;
+        box-sizing: border-box;
+        animation: spinning 1s linear infinite;
+      }
+
+      @keyframes spinning {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      header {
+        background-color: pink;
+        padding: 10px;
+        border-radius: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        overflow-x: auto;
+        margin: 20px;
+      }
+      header nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        list-style: none;
+      }
+      header nav ul li a {
+        text-decoration: none;
+        color: black;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="loading.html">Loading</a>
+          </li>
+          <li>
+            <a href="loading-round.html">Round Loading</a>
+          </li>
+          <li>
+            <a href="infinite-scroll-information.html">Infinite Scroll</a>
+          </li>
+          <li>
+            <a href="heart-pulse.html">Heart Pulse</a>
+          </li>
+          <li>
+            <a href="bounce.html">Bounce</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="loading"></div>
+  </body>
+</html>

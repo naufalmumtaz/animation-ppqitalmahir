@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bounce</title>
+
+    <style>
+      button {
+        background-color: lightseagreen;
+        padding: 20px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        margin: 250px auto;
+        display: block;
+        cursor: pointer;
+      }
+
+      button:hover {
+        animation: bouncy 1s ease 0.2s normal;
+      }
+
+      @keyframes bouncy {
+        0% {
+          transform: translate(0, 0);
+        }
+        20% {
+          transform: translate(0, -15px);
+        }
+        30% {
+          transform: translate(0, 15px);
+        }
+        40% {
+          transform: translate(0, 10px);
+        }
+        50% {
+          transform: translate(0, -10px);
+        }
+        60% {
+          transform: translate(0, 5px);
+        }
+        70% {
+          transform: translate(0, -5px);
+        }
+        80% {
+          transform: translate(0, 2px);
+        }
+        90% {
+          transform: translate(0, -2px);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+
+      header {
+        background-color: pink;
+        padding: 10px;
+        border-radius: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        overflow-x: auto;
+        margin: 20px;
+      }
+      header nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        list-style: none;
+      }
+      header nav ul li a {
+        text-decoration: none;
+        color: black;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="loading.html">Loading</a>
+          </li>
+          <li>
+            <a href="loading-round.html">Round Loading</a>
+          </li>
+          <li>
+            <a href="infinite-scroll-information.html">Infinite Scroll</a>
+          </li>
+          <li>
+            <a href="heart-pulse.html">Heart Pulse</a>
+          </li>
+          <li>
+            <a href="bounce.html">Bounce</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <button>Click Me!</button>
+  </body>
+</html>

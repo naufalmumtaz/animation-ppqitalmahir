@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: sans-serif;
+        padding: 10px 0px;
+      }
+
+      .scroll {
+        background-color: orange;
+        margin: 150px auto;
+        padding: 10px;
+        overflow: hidden;
+        width: 80%;
+      }
+
+      .scroll .scroll-inner {
+        animation: infinity-scroll 20s linear infinite;
+        display: flex;
+        gap: 40px;
+        white-space: nowrap;
+        height: 100%;
+        width: 100%;
+      }
+
+      .scroll .scroll-inner:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes infinity-scroll {
+        0% {
+          transform: translateX(0px);
+        }
+        100% {
+          transform: translateX(-1000px);
+        }
+      }
+
+      header {
+        background-color: pink;
+        padding: 10px;
+        border-radius: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        overflow-x: auto;
+        margin: 20px;
+      }
+      header nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        list-style: none;
+      }
+      header nav ul li a {
+        text-decoration: none;
+        color: black;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="loading.html">Loading</a>
+          </li>
+          <li>
+            <a href="loading-round.html">Round Loading</a>
+          </li>
+          <li>
+            <a href="infinite-scroll-information.html">Infinite Scroll</a>
+          </li>
+          <li>
+            <a href="heart-pulse.html">Heart Pulse</a>
+          </li>
+          <li>
+            <a href="bounce.html">Bounce</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="scroll">
+      <div class="scroll-inner">
+        <p>Ini adalah informasi yang akan ditampilkan pada infinite scroll</p>
+        <p>Ini adalah informasi yang akan ditampilkan pada infinite scroll</p>
+        <p>Ini adalah informasi yang akan ditampilkan pada infinite scroll</p>
+        <p>Ini adalah informasi yang akan ditampilkan pada infinite scroll</p>
+      </div>
+    </div>
+  </body>
+</html>

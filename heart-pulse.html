@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heart Pulse</title>
+
+    <style>
+      .heart {
+        background-color: salmon;
+        width: 150px;
+        height: 150px;
+        transform: rotate(45deg);
+        position: relative;
+        animation: pulse 1s ease-out infinite;
+        margin: 200px auto;
+      }
+      .heart::before {
+        position: absolute;
+        top: 0;
+        display: block;
+        content: "";
+        width: 150px;
+        height: 230px;
+        background-color: salmon;
+        transform: translate(0px, -100px);
+        border-radius: 2000px;
+      }
+      .heart::after {
+        position: absolute;
+        top: 0;
+        display: block;
+        content: "";
+        width: 150px;
+        height: 230px;
+        background-color: salmon;
+        transform: rotate(-270deg) translate(-40px, 50px);
+        border-radius: 2000px;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1) rotate(45deg);
+        }
+        50% {
+          transform: scale(1.3) rotate(45deg);
+        }
+        100% {
+          transform: scale(1) rotate(45deg);
+        }
+      }
+
+      header {
+        background-color: pink;
+        padding: 10px;
+        border-radius: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        overflow-x: auto;
+        margin: 20px;
+      }
+      header nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        list-style: none;
+      }
+      header nav ul li a {
+        text-decoration: none;
+        color: black;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="loading.html">Loading</a>
+          </li>
+          <li>
+            <a href="loading-round.html">Round Loading</a>
+          </li>
+          <li>
+            <a href="infinite-scroll-information.html">Infinite Scroll</a>
+          </li>
+          <li>
+            <a href="heart-pulse.html">Heart Pulse</a>
+          </li>
+          <li>
+            <a href="bounce.html">Bounce</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="heart"></div>
+  </body>
+</html>
