@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="global.css" />
+    <style>
+      :root {
+        --t: 20s;
+      }
+
+      body {
+        background-color: black;
+      }
+
+      main {
+        padding: 70px 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .scroll {
+        mask-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 1) 10%,
+          rgba(0, 0, 0, 1) 90%,
+          rgba(0, 0, 0, 0)
+        );
+        color: white;
+        padding: 10px;
+        overflow: hidden;
+        width: 80%;
+        display: flex;
+        white-space: nowrap;
+        gap: 20px;
+      }
+
+      .scroll .scroll-inner {
+        display: flex;
+        white-space: nowrap;
+        gap: 20px;
+        animation: infinity-scroll var(--t) infinite linear;
+      }
+
+      .scroll .scroll-inner:hover {
+        animation-play-state: paused;
+      }
+
+      .scroll .scroll-inner div {
+        display: flex;
+        white-space: nowrap;
+        gap: 20px;
+      }
+
+      .scroll .scroll-inner div img {
+        width: 9rem;
+        border-radius: 10px;
+        filter: grayscale(100%);
+        box-sizing: border-box;
+        transition: all 0.1s ease-out;
+      }
+
+      .scroll .scroll-inner div img:hover {
+        cursor: pointer;
+        filter: grayscale(0%);
+        border: 2px solid white;
+      }
+
+      @keyframes infinity-scroll {
+        0% {
+          transform: translateX(0px);
+        }
+        100% {
+          transform: translateX(-1000px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="loading.html">Loading</a>
+          </li>
+          <li>
+            <a href="loading-round.html">Round Loading</a>
+          </li>
+          <li>
+            <a href="infinite-scroll-information.html">Infinite Scroll</a>
+          </li>
+          <li>
+            <a href="heart-pulse.html">Heart Pulse</a>
+          </li>
+          <li>
+            <a href="bounce.html">Bounce</a>
+          </li>
+          <li>
+            <a href="infinite-scroll-techstack.html"
+              >Infinite Scroll Techstack</a
+            >
+          </li>
+          <li>
+            <a href="image-infinite-scroll.html">Infinite Scroll Image</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="scroll image-box" style="--t: 35s">
+        <div class="scroll-inner">
+          <div>
+            <img
+              src='https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+            />
+            <img
+              src='https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1504893524553-b855bce32c67?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1493589976221-c2357c31ad77?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1508669232496-137b159c1cdb?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1491147334573-44cbb4602074?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src='https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+            />
+            <img
+              src='https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1504893524553-b855bce32c67?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1493589976221-c2357c31ad77?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1508669232496-137b159c1cdb?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1491147334573-44cbb4602074?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="scroll image-box" style="--t: 25s">
+        <div class="scroll-inner">
+          <div>
+            <img
+              src='https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+            />
+            <img
+              src='https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1504893524553-b855bce32c67?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1493589976221-c2357c31ad77?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1508669232496-137b159c1cdb?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1491147334573-44cbb4602074?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src='https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+            />
+            <img
+              src='https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1504893524553-b855bce32c67?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1493589976221-c2357c31ad77?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1508669232496-137b159c1cdb?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+            <img
+              src='https://images.unsplash.com/photo-1491147334573-44cbb4602074?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"'
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
